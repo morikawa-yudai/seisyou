@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>お問い合わせ | 株式会社星翔</title>
+<meta name="description" content="株式会社星翔へのお問い合わせ。Amazon DSP配送・防犯対策・行政案件・採用に関するご相談はこちらから。神奈川県伊勢原市。">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="お問い合わせ | 株式会社星翔">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://seisho.co.jp/contact.html">
+<meta property="og:image" content="https://seisho.co.jp/images/ogp.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://seisho.co.jp/" },
+    { "@type": "ListItem", "position": 2, "name": "お問い合わせ", "item": "https://seisho.co.jp/contact.html" }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/inner.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="header" class="header-inner-page" role="banner">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="株式会社星翔 トップページへ">
+      <img src="images/logo.jpg" alt="株式会社星翔 ロゴ" class="logo-img">
+      <div class="logo-text visible" id="logoText">
+        <span class="logo-jp">株式会社 星翔</span>
+        <span class="logo-en">Seisho Co., Ltd.</span>
+      </div>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="globalNav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="globalNav" class="global-nav" aria-label="グローバルナビゲーション">
+      <ul>
+        <li><a href="services.html">事業内容</a></li>
+        <li><a href="about.html">会社概要</a></li>
+        <li><a href="recruit.html">採用情報</a></li>
+        <li><a href="news.html">お知らせ</a></li>
+        <li><a href="contact.html" class="nav-cta active">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <div class="container">
+    <ol>
+      <li><a href="index.html">ホーム</a></li>
+      <li aria-current="page">お問い合わせ</li>
+    </ol>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero page-hero-short" aria-label="お問い合わせページヘッダー">
+  <canvas id="starsCanvas" aria-hidden="true"></canvas>
+  <div class="hero-gradient" aria-hidden="true"></div>
+  <div class="page-hero-content">
+    <p class="hero-eyebrow">Contact</p>
+    <h1 class="page-hero-title">お問い合わせ</h1>
+    <p class="page-hero-sub">まずはお気軽にご相談ください。</p>
+  </div>
+</section>
+
+<!-- ============================================================
+  CONTACT MAIN
+============================================================ -->
+<section class="section" id="contact-form">
+  <div class="container">
+    <div class="contact-main-grid">
+
+      <!-- FORM -->
+      <div class="contact-form-col reveal">
+        <p class="section-label">Send Message</p>
+        <h2 class="section-title">お問い合わせ<strong>フォーム</strong></h2>
+        <p style="font-size:14px;color:var(--text-mid);line-height:2;margin-bottom:40px">内容を確認後、担当者より2営業日以内にご返信いたします。お急ぎの場合はお電話でもご連絡ください。</p>
+
+        <form class="contact-form" action="#" method="post" novalidate>
+          <div class="form-row-2">
+            <div class="form-group">
+              <label class="form-label" for="c-name">お名前 <span class="required">*</span></label>
+              <input type="text" id="c-name" name="name" class="form-input" placeholder="山田 太郎" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="c-company">会社名・団体名</label>
+              <input type="text" id="c-company" name="company" class="form-input" placeholder="株式会社○○" autocomplete="organization">
+            </div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-group">
+              <label class="form-label" for="c-email">メールアドレス <span class="required">*</span></label>
+              <input type="email" id="c-email" name="email" class="form-input" placeholder="info@example.com" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="c-tel">電話番号</label>
+              <input type="tel" id="c-tel" name="tel" class="form-input" placeholder="090-0000-0000" autocomplete="tel">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="c-subject">お問い合わせ種別 <span class="required">*</span></label>
+            <select id="c-subject" name="subject" class="form-input" required>
+              <option value="">選択してください</option>
+              <option value="amazon">Amazon DSP配送について</option>
+              <option value="security">防犯対策業務について</option>
+              <option value="government">行政・自治体案件について</option>
+              <option value="recruit">採用について</option>
+              <option value="other">その他</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="c-message">お問い合わせ内容 <span class="required">*</span></label>
+            <textarea id="c-message" name="message" class="form-input" rows="6" placeholder="ご用件・ご質問内容をご記入ください" required></textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-check">
+              <input type="checkbox" name="privacy" required>
+              <span><a href="privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に同意する</span>
+            </label>
+          </div>
+          <button type="submit" class="form-submit">送信する</button>
+        </form>
+      </div>
+
+      <!-- INFO -->
+      <div class="contact-info-col reveal delay-1">
+        <p class="section-label">Office Info</p>
+        <h2 class="section-title" style="font-size:28px">アクセス情報</h2>
+
+        <div class="contact-info-block">
+          <h3 class="contact-info-label">事務所（お問い合わせ先）</h3>
+          <address class="contact-info-value">
+            〒259-1131<br>
+            神奈川県伊勢原市小稲葉1598-1 1F
+          </address>
+        </div>
+
+        <div class="contact-info-block">
+          <h3 class="contact-info-label">営業時間</h3>
+          <p class="contact-info-value">平日 9:00 – 18:00<br><small style="color:var(--text-light);font-size:12px">土日祝・年末年始を除く</small></p>
+        </div>
+
+        <div class="contact-info-block">
+          <h3 class="contact-info-label">対応内容</h3>
+          <ul class="contact-service-list">
+            <li>Amazon DSP配送のご依頼・ご相談</li>
+            <li>防犯対策業務のご相談</li>
+            <li>行政・自治体案件のご相談</li>
+            <li>採用に関するお問い合わせ</li>
+            <li>その他一般お問い合わせ</li>
+          </ul>
+        </div>
+
+        <!-- GoogleMap -->
+        <div class="map-wrap" style="margin-top:32px">
+          <div class="map-placeholder-large" style="height:220px">
+            <div class="map-placeholder-inner">
+              <span style="font-size:28px" aria-hidden="true">📍</span>
+              <p>GoogleMap 埋め込みエリア</p>
+              <small>神奈川県伊勢原市小稲葉1598-1 1F</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="images/logo.jpg" alt="株式会社星翔" class="footer-logo-img">
+          <div>
+            <span class="footer-logo-jp">株式会社 星翔</span>
+            <span class="footer-logo-en">Seisho Co., Ltd.</span>
+          </div>
+        </div>
+        <p class="footer-tagline">地域の信頼を、確かな一歩で届ける。<br>神奈川県を拠点にAmazon DSP・防犯対策・<br>行政案件に取り組む信頼のインフラ企業。</p>
+        <address class="footer-address">神奈川県伊勢原市小稲葉1598-1 1F</address>
+      </div>
+      <div class="footer-col">
+        <h4>サービス</h4>
+        <ul>
+          <li><a href="services.html#amazon">Amazon DSP配送</a></li>
+          <li><a href="services.html#security">防犯対策業務</a></li>
+          <li><a href="services.html#government">行政・自治体案件</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>会社情報</h4>
+        <ul>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="about.html#message">代表挨拶</a></li>
+          <li><a href="news.html">お知らせ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>採用・連絡</h4>
+        <ul>
+          <li><a href="recruit.html">採用情報</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="privacy.html">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <small class="footer-copy">© 2024 株式会社星翔 All Rights Reserved.</small>
+      <span class="footer-star" aria-hidden="true">✦</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
